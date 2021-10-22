@@ -5,10 +5,10 @@ namespace CSharp_Day2_Project
     class Student
     {
         //Data Members
-       int StudentId;
-       string StudentName;
-       int StudentAge;
-       static string UniversityName;
+        int StudentId;
+        string StudentName;
+        int StudentAge;
+        static string UniversityName;
 
         //Static Constructor
         static Student()
@@ -35,7 +35,7 @@ namespace CSharp_Day2_Project
             Console.WriteLine("University Name : {0}", Student.UniversityName);
         }
     }
-    class Marks: Student
+    class Marks : Student
     {
         protected float objectiveMarks, subjectiveMarks;
 
@@ -56,7 +56,7 @@ namespace CSharp_Day2_Project
 
         }
     }
-    class Sports: Marks
+    class Sports : Marks
     {
         protected float score;
         public new void AcceptDetails()
